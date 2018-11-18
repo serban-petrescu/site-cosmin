@@ -1,0 +1,95 @@
+---
+---
+
+@import "bulma";
+
+// home page
+
+.navbar {
+    border-bottom: 1px solid $primary;
+}
+
+.fade-in {
+    animation: fadein 1s;
+}
+
+.hero {
+    margin-top: -1px;
+}
+
+.hero-body .title, .hero-body .subtitle {
+    margin: 0;
+}
+
+.hero-body hr {
+    background-color: $primary;
+    max-width: 12.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.title .title-component:after {
+    color: $primary;
+    content: ' \25CF ';
+}
+
+.title .title-component:last-child:after {
+    content: '';
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@include tablet() {
+    
+    .logo-left, .logo-right, .logo-left > img, .logo-right > img {
+        width: 130px;
+    }
+
+    .hero-foot {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        border-top: 1px solid $primary;
+    }
+
+    .hero-foot > div {
+        flex-grow: 1;
+        flex-basis: 0;
+        border-right: 1px solid $primary;
+        order: 1;
+    }
+
+    .hero-foot > div:first-child {
+        order: 2;
+    }
+
+    .hero-foot > div:last-child {
+        border-right: 0;
+        order: 3;
+    }
+
+}
+
+@include mobile() {
+
+    .hero-foot {
+        border-top: 1px solid $primary;
+    }
+
+    .hero-foot > div {
+        border-bottom: 1px solid $primary;
+    }
+
+    .hero-foot > div:last-child {
+        border-bottom: 0;
+    }
+    
+    .logo-left, .logo-right {
+        display: none;
+    }
+}

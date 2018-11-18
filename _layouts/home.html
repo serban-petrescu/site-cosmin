@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="hero is-fullheight-with-navbar fade-in">
+    <div class="hero-body">
+        <figure class="logo-left">
+            <img src="{{ '/assets/img/logo-left.png' | prepend: site.baseurl }}" />
+        </figure>
+        <div class="container has-text-centered">
+            <p class="title is-size-2-desktop is-size-4-touch is-uppercase">
+                <span class="title-component">soare</span>
+                <span class="title-component">andreșoiu</span>
+                <span class="title-component">{{ site.data.home.asociates[page.lang] }}</span>
+            </p>
+            <hr class="is-size-2-desktop is-size-4-touch" />
+            <p class="subtitle is-3-desktop is-5-touch is-uppercase">{{ site.data.home.subtitle[page.lang] }}</p>
+        </div>
+        <figure class="logo-right">
+            <img src="{{ '/assets/img/logo-right.png' | prepend: site.baseurl }}" />
+        </figure>
+    </div>
+    {{ content }}
+    <div class="hero-foot has-background-white-bis">
+        {% for person in site.data.persons %}
+           <div class="has-text-centered">
+                <br />
+                {% if person.motto == nil  %}
+                    <br class="is-hidden-mobile"/>
+                    <br class="is-hidden-mobile"/>
+                {% else %}
+                    <div class="has-text-primary is-uppercase is-italic"><small>{{ person.motto }}</small></div>
+                    <br />
+                {% endif %}
+                <div class="is-uppercase"><strong>{{ person.name }}</strong></div>
+                <div><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
+                <br />
+           </div>
+        {% endfor %}
+    </div>
+</div>

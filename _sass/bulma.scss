@@ -1,0 +1,13 @@
+@import "bulma/utilities/initial-variables";
+
+$primary: #D7B86A;
+$link: $primary;
+$navbar-breakpoint: 500px;
+$navbar-burger-color: $primary;
+
+@import "bulma/utilities/_all";
+@import "bulma/base/_all";
+@import "bulma/elements/_all";
+@import "bulma/components/_all";
+@import "bulma/grid/_all";
+@import "bulma/layout/_all";
