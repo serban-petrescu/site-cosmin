@@ -3,11 +3,8 @@ label: home
 hide_body: false
 is_partial: false
 fields:
-- type: include
-  label: Associates
+- type: blocks
   name: asociates
-  template: translated-text
-- type: include
-  label: Subtitle
-  name: subtitle
-  template: translated-text
+  label: Associates
+  template_types:
+  - translated-text
