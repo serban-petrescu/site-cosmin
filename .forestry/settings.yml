@@ -10,7 +10,6 @@ sections:
 - type: document
   path: _data/contact.yml
   label: Contact
-  match: "**/*"
   read_only: true
 upload_dir: assets/img
 public_path: "/assets/img"
