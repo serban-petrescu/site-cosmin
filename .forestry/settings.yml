@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/home.yml
   label: Test
-  match: "**/*"
 - type: directory
   path: _data
   label: Data
