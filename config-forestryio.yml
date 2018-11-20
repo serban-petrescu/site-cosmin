@@ -1,6 +1,6 @@
+---
 name: Avocatură Sibiu
-
 googleMapsKey: AIzaSyCaI_gX5jxo9C3fgraoRq0XfiNipWESH30
-
 plugins:
-  - jekyll-seo-tag
+- jekyll-seo-tag
+timezone: Etc/UTC
