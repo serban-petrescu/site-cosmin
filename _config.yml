@@ -2,5 +2,7 @@ name: Avocatură Sibiu
 
 googleMapsKey: AIzaSyCaI_gX5jxo9C3fgraoRq0XfiNipWESH30
 
+baseurl: /site-cosmin
+
 plugins:
   - jekyll-seo-tag
