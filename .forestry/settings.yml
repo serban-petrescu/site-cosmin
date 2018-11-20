@@ -5,8 +5,9 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: _data/home.yml
-  label: Test
+  path: _config.yml
+  label: Config
+  match: "**/*"
 - type: directory
   path: _data
   label: Data
